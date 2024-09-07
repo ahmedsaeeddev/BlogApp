@@ -168,5 +168,4 @@ showBlogs();
 
 
 
-// export default showBlog;
 export default { doc, showBlogs }
