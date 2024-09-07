@@ -5,18 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 </head>
 
 <body>
-    <div class="blogMaker">
+    <div style="text-align: right;" class="nav">
+        <button id="showBlogs">Show Blogs</button>
+        <button id="logout">Logout</button>
+    </div>
+    <div class="box">
+        <div class="boxArea">
+            <div class="loader"></div>
+            <h2 id="message" style="color:black" ;"></h2>
+            <button class="done">Done</button>
+            <br>
+        </div>
+    </div>
+
+
+    <div id="blogForm" class="blogMaker">
         <input type="text" id="title" placeholder="Title">
         <input type="file" id="image" accept="image/*">
-        <textarea id="content" placeholder="Content"></textarea>
+        <textarea id="content" placeholder="Content" rows="9"></textarea>
         <button id="upload">Submit</button>
     </div>
 
     <script src="../firebase.js" type="module"></script>
     <script src="./dashboard.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>

@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <a href="./SignIn/signin.html">Create an Account</a>
 
-    <script src="./firebase.js" type="module"></script>
-    <script type="module" src="app.js"></script>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Make Blog</a></li>
+            </ul>
+        </div>
+        <div id="info">
+            <div id="data">
+                <div class="textSect">
+                    <div class="blogTitle">
+                        <h1 id="title"></h1>
+                    </div>
+                    <div class="blogContent">
+                        <p id="content"></p>
+                    </div>
+                </div>
+                <div class="imgSect">
+                    <img  id="img" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="content content1">
+            <div class="textArea textArea1">
+                <p>Create Blogs Like This <a href="./SignIn/signin.html">Click here</a></p>
+            </div>
+
+        </div>
+        <script src="firebase.js" type="module"></script>
+        <script src="app.js" type="module"></script>
 </body>
+
 </html>

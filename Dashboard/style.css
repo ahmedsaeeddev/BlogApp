@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .blogMaker input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  transition: border-bottom-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #333;
+} */
+
+.blogMaker input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 78%;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #333;
+  color: #ccc;
+  text-indent: 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  &:focus {
+    border-color: #008cba;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  &:hover {
+    border-color: #008cba;
+  }
+  &:active {
+    border-color: #008cba;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+button {
+  padding: 10px;
+  width: 140px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #008cba;
+  color: #fff;
+  &:hover {
+    background-color: #0069d9;
+  }
+}
+
+.blogMaker {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.boxArea {
+  width: 642px;
+  height: 642px;
+  background-color: white;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  padding: 12px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #008abb;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  margin: 40px auto;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
-    <input type="email" id="email">
-    <input type="password" id="password">
-    <button id="btn">Login</button>
+    <div class="container">
+        <h1 style="margin-bottom: 10px;">Log In</h1>
+        <p style="margin-bottom: 20px;">Login to your account</p>
+        <input type="email" placeholder="Email Address" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <button id="btn">Login</button>
+        <a href="/SignIn/signin.html">Create An Account.</a>
+        <a href="javascript:void(0);" id="reset-password">Forgot Password</a>
+    </div>
 
     <script src="./login.js" type="module"></script>
     <script src="../firebase.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
